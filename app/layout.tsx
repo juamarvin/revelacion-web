@@ -16,7 +16,7 @@ const karla = Karla({
 });
 
 export const metadata: Metadata = {
-  title: "La Gran Revelación · ¿Niño o niña?",
+  title: "La Gran Revelación",
   description:
     "Estás invitado a La Gran Revelación. Nuestros presentadores felinos tienen una noticia increíble para compartir: hacé tu apuesta y dejá tu mensaje para el bebé.",
 };
