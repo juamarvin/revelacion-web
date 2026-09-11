@@ -128,13 +128,13 @@ export function Apuestas() {
               </span>
               <textarea
                 rows={3}
-                maxLength={150}
+                maxLength={369}
                 value={mensaje}
                 onChange={(e) => setMensaje(e.target.value)}
                 placeholder={a.mensajePlaceholder}
                 className="w-full resize-none rounded-xl border border-gold/40 bg-[#fdfbf3] px-3 py-2.5 text-sm text-ink placeholder:text-ink/30 focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/30"
               />
-              <span className="mt-0.5 block text-right text-[10px] text-ink/40">{mensaje.length}/150</span>
+              <span className="mt-0.5 block text-right text-[10px] text-ink/40">{mensaje.length}/369</span>
             </label>
 
             {error && <p className="text-center text-[11px] font-semibold text-rose">{a.error}</p>}
