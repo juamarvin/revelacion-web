@@ -555,7 +555,7 @@ export function ComicVita() {
 
       <div
         className="sticky top-0 z-40 border-b border-white/10 bg-black/70 px-3 py-2 backdrop-blur"
-        style={{ display: renderMode ? "none" : undefined }}
+        style={{ display: renderMode || fs ? "none" : undefined }}
       >
         <div className="mx-auto flex max-w-5xl items-center gap-3">
           <button
@@ -658,15 +658,16 @@ export function ComicVita() {
 
       <div
         className={`relative flex w-full items-center justify-center overflow-hidden bg-black ${
-          renderMode ? "h-[100svh]" : "h-[calc(100svh-3.5rem)]"
+          renderMode || fs ? "h-[100svh]" : "h-[calc(100svh-3.5rem)]"
         }`}
       >
         <div
           className="relative overflow-hidden"
           style={{
-            width: renderMode
-              ? "min(100%, calc(100svh * 1672 / 941))"
-              : "min(100%, calc((100svh - 3.5rem) * 1672 / 941))",
+            width:
+              renderMode || fs
+                ? "min(100%, calc(100svh * 1672 / 941))"
+                : "min(100%, calc((100svh - 3.5rem) * 1672 / 941))",
             aspectRatio: "1672 / 941",
             animation: temblor,
           }}
