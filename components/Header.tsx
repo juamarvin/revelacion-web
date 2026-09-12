@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Paw } from "./icons";
 
 export function Header() {
@@ -12,12 +13,20 @@ export function Header() {
             Revelación
           </span>
         </div>
-        <a
-          href="#apuestas"
-          className="rounded-full border border-gold/70 px-4 py-1.5 font-display text-[10px] uppercase tracking-[0.2em] text-ink transition-colors hover:bg-gold/10"
-        >
-          Apostar
-        </a>
+        <div className="flex items-center gap-2">
+          <Link
+            href="/comic"
+            className="rounded-full border border-gold/70 px-4 py-1.5 font-display text-[10px] uppercase tracking-[0.2em] text-ink transition-colors hover:bg-gold/10"
+          >
+            La canción
+          </Link>
+          <a
+            href="#apuestas"
+            className="rounded-full border border-gold/70 px-4 py-1.5 font-display text-[10px] uppercase tracking-[0.2em] text-ink transition-colors hover:bg-gold/10"
+          >
+            Apostar
+          </a>
+        </div>
       </div>
     </header>
   );
